@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
 /*
- * comments Test
+ * The Example of comments
+ * @bruce
+ * 20171230v1
  */
 int main()
 {

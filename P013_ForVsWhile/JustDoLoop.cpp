@@ -29,6 +29,7 @@ int main()
  * DIFFERENCE:
  * !!! use for when there is a known number of iterations(重复),
  * !!! and use while constructs when the number of iterations in not known in advance.
+ * 见 VariableNumberOfInput.cpp
  *
  * ADDITION:
  * use break and continue statements which .come in handy.(派上用场) when doing loop processing.

@@ -1,5 +1,9 @@
 #include <iostream>
-
+/**
+ * test file redirection
+ * @bruce
+ * 20171230v1
+ */
 int main()
 {
     int num1 = 0, num2 = 0;

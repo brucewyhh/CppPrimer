@@ -28,6 +28,11 @@ int main()
     cout << a<< endl;
     cout << b << endl;
     cout << check(a, b) << endl;
+
+    int i = 40;
+    if (i)
+        cout << i << endl;
+
     return 0;
 }
 /*

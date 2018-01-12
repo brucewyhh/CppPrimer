@@ -20,7 +20,10 @@ int main()
     printf("-128 加法逆元 = %d\n", e);  // -128(是其本身, -128 + -128 + 256 = 0)
     int8_t f = -127;
     int8_t g = -f;
-    printf("-127 加法逆元 = %d", g);  // 127( 127+ [-127] = 0)
+    printf("-127 加法逆元 = %d\n", g);  // 127( 127+ [-127] = 0)
+
+    signed char un = 256;
+    cout << un << endl;
     return 0;
 
 }

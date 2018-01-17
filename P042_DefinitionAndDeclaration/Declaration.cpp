@@ -6,10 +6,15 @@ using namespace std;
  * 20180117v1
  */
 
+int _abc = 9;
 int main()
 {
     extern int a;
     cout << a << endl;
+
+    int _Aling = 9;
+    cout << _Aling << endl;
+    cout << _abc << endl;
 }
 
 /*

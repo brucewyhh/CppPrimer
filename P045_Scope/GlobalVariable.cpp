@@ -22,9 +22,13 @@ public:
 
 Global test_global;
 
+int test = 99;
 int main()
 {
     std::cout << "main is running" << std::endl;
+    int test = 10;
+    std::cout << test << std::endl;
+    std::cout << ::test << std::endl;
     return 0;
 }
 

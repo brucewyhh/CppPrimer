@@ -15,14 +15,18 @@ int main()
 
     // char &ca_rel_val = ia_ref_val; // 引用类型必须与被引用对象的类型严格匹配
 
-    // int &id_ref_val = 1299;
-    // int &ie_rel_val = ia_val * 2;  // 引用类型不能与字面值或者某个表达式计算结果绑定在一起
+    // int &id_ref_val = 1299; // TODO why
+    // int &ie_rel_val = ia_val * 2;  //TODO why 引用类型不能与字面值或者某个表达式计算结果绑定在一起
 
-    int if_val = 512;
+    int ib_val = 512;
 
-    cout << &ia_val << endl;
-    cout << &ia_ref_val << endl;
-    cout << &if_val << endl;
+    int *p = &ia_val;
+    cout << &ia_val << endl; //        0x7fff5b4a1b18
+    cout << *(p-1) << endl;  // 32767 -> 7fff
+    cout << *(p-2) << endl;  //1415924488 -> 54654b08
+    cout << &ib_val << endl;
+
+
 
     return 0;
 }

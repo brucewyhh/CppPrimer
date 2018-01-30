@@ -15,8 +15,8 @@ int main()
 
     // char &ca_rel_val = ia_ref_val; // 引用类型必须与被引用对象的类型严格匹配
 
-    // int &id_ref_val = 1299; // TODO why
-    // int &ie_rel_val = ia_val * 2;  //TODO why 引用类型不能与字面值或者某个表达式计算结果绑定在一起
+    // int &id_ref_val = 1299;   //TODO 为什么字面值不能绑定到引用上，字面值在内存中难道没有内存地址吗？
+    // int &ie_rel_val = ia_val * 2;   //TODO 为什么某个表达式计算结果绑定在一起，表达式在内存中如何表示？
 
     int ib_val = 512;
 
@@ -37,5 +37,4 @@ int main()
  *             0x7fff5b4a1b10
  *    if_val   0x7fff5b4a1b0c
  *    64bit pointer 8byte
- *    TODO 引用如何底层实现:应该是指针
  */

@@ -36,7 +36,9 @@ int main()
     float fa = 1e40;       //ok，double->float
     //float fb = {1e40};   //error：浮点数字面值常量超过float能表示的范围
     double fc = 1.6;
-    //float fd{fc};          //TODO error, 变量double->float,   变量与常量在处理时有什么区别
+
+    float fd{1.6};
+    // float fdd{fc};         //TODO  float fd{1.6} VS double fc = 1.6; float fd{fc};   变量与常量在处理时有什么区别
 
     unsigned long long ulla = -1;
     float fe = ulla;             //将-1（0xFFFFFFFF）强转，再隐式转成float
@@ -45,14 +47,14 @@ int main()
 
     float fh = {2147483647};     //int32最大值10^9, ok
     int imax = 2147483647;
-    float fi{imax};              //TODO error
+    // float fi{imax};              // 无法精确表示 error
 
-    const int x = 1024, y = 1;  //注意x，y被const修饰
+    const int x = 1024;
+    const int  y = 1;  //注意x，y被const修饰
     char c = x;                 //ok
-    //char d = {x};               //error: int->char
+    //char d = {x};               //error: int->char 超范围
     char e = y;                 //ok
-    char f = {y};               //TODO ok。如果y为int型，则该行会出错。但由于加了const并且值为1。编译器认为这样的转换是安全的
-
+    char f = {y};               //TODO char f = {y} 为什么如果y为int型，则该行会出错。但由于加了const并且值为1。编译器认为这样的转换是安全的
 
     return 0;
 }

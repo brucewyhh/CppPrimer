@@ -32,7 +32,7 @@ public:
     }
     bool isSame(Test other)
     {
-        return m_val == other.m_val; //TODO 私有对象怎么能访问得到呢？
+        return m_val == other.m_val; //TODO 类对象的私有对象怎么能访问得到呢？（在类的声明中为什么能够访问类对象的私有成员）
     }
 
 private:

@@ -25,4 +25,6 @@ int main()
  * 只有当extern声明位于函数外部时，才可以有显式初始化
  *
  * 任何包含了显式初始化的声明(declaration)即为定义(definition)
+ *
+ * TODO extern 表示的变量在内存中如何表示
  */

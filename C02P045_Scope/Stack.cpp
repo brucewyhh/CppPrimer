@@ -23,7 +23,7 @@ int main()
     char cb[] = "abcd";
     cout << &cb << endl; //(字符串长度4 + 空字符1)
 
-    func(ia, ca, ib); //TODO
+    func(ia, ca, ib); //TODO 函数压栈顺序由编译器决定
 
 }
 /*

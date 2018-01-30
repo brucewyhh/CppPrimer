@@ -11,7 +11,7 @@ int main()
 {
     std::cout << "Hello I'm here" << std::endl;
 
-    std::cout << "Next I'm...";
+    std::cout << "Next I'm...\n";
     sleep(5);
     std::cout << "Coming !" << std::endl;
     return 0;
